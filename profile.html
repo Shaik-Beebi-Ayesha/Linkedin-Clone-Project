@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Clone</title>
+    <link rel="stylesheet" href="linkedin-css.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="linkedin.html" class="logo"><img src="li_images/logo.png"></a>
+            <div class="search">
+                <img src="li_images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="li_images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="li_images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="li_images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="li_images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="li_images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="usertoggle">
+            <img class="nav-profile-img" src="li_images/user-1.png" onclick="toggleMenu()">
+            <div class="me & dropdown">
+                <span>Me</span>
+                <img src="li_images/down-arrow.png">
+            </div>
+        </div>
+        <div class="apps-icon">
+            <img class="icons-img" src="li_images/appsicon.png">
+            <div>
+                <span>For Business</span>
+                <img class="dropdownarrow" src="li_images/down-arrow.png">
+            </div>
+        </div>
+        <div class="gethired">
+            <a href="#">Get Hired Faster<br>Try Premium Free</a>
+        </div>
+        
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="li_images/user-1.png">
+                    <div>
+                        <h3>Rayon Walton</h3>
+                        <p>Aspiring Java Software Developer | Seeking Entry-Level Programming Position | Familiar with DSA , Python , SQL</p>
+                    </div>
+                </div>
+                <div class="veiw-profile"><a href="linkedin/profile.html">View Profile</a></div>
+                <hr>
+                <div class="below">
+                    <h3>Account</h3>
+                    <p>Settings & Privacy</p>
+                    <p>Help</p>
+                    <p>Language</p>
+                </div>
+                <div class="below">
+                    <h3>Manage</h3>
+                    <p>Post & Activity</p>
+                    <p>Job Posting Account</p>
+                </div>
+                <hr color="#eee">
+                <div class="signout"><a>Sign Out</a></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="maincontainer" id="profile-tab">
+        <div class="left-Profile">
+            <div class="profile-overview">
+                <img class="cover"src="li_images/cover-pic.png">
+                <div class="profilepic"><img src="li_images/user-1.png"></div>
+                <div class="inner-details">
+                    <div class="left-details">
+                        <h1>Ronaldo</h1>
+                        <small>(She/Her)</small>
+                        <p>Aspiring Java Software Developer | Seeking Entry-Level Programming Position | Familiar with DSA , Python , SQL</p>
+                        <small>Cuddapah, Andhra Pradesh, India </small>
+                        <h3>&#8226; Contact Info</h3>
+                        <h4>47 Connections</h4>
+                        <div class="opento"><p>Open to</p></div>
+                        <div class="add-profile-section">Add Profile Section</div>
+                        <div class="more">More</div>
+                    </div>
+                    <div class="right-details">
+                        <img src="li_images/rgukt-logo.png">
+                        <p>Rajiv Gandhi University of Knowledge Technologies , RK Valley</p>
+                    </div>
+                </div>
+                <div class="open-to-work">
+                    <h3>Open to work</h3>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    <p>Java Programmer, Software Engineer, Python Developer and SQL Developer roles</p>
+                    <h4>Show Details</h4>
+                </div>
+            </div>
+            <div class="analytics">
+                <h1>Analytics</h1>
+                <i class="fa fa-eye" id="eye" aria-hidden="true"></i>
+                <p>Private to you</p>
+                <div class="analytics-subdivs">
+                    <div class="sub">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <div>
+                            <h3>45 profile views</h3>
+                            <p>Discover who's viewed your profile.</p>
+                        </div>
+                    </div>
+                    <div class="sub">
+                        <i class="fa fa-signal" aria-hidden="true"></i>
+                        <div>
+                            <h3>105 post impressions</h3>
+                            <p>Check out who's engaging with your posts.</p>
+                        </div>
+                    </div>
+                    <div class="sub">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <div>
+                            <h3>9 search appearances</h3>
+                            <p>See how often you appear in search results.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="resources">
+                <h1>Resources</h1>
+                <i class="fa fa-eye" id="eye" aria-hidden="true"></i>
+                <p>Private to you</p>
+                <div class="creator-mode">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                    <div>
+                        <h2>
+                            Creator mode
+                        </h2>
+                        <p>Get discovered, showcase content on your profile, and get access to creator tools</p>
+                    </div>
+                </div>
+                <div class="ny-network">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <div>
+                        <h2>
+                            My network
+                        </h2>
+                        <p>See and manage your connections and interests.</p>
+                    </div>
+                </div>
+                <hr color="#eee">
+                <h4 class="show-more">Show All 5 Resources <i class="fa fa-arrow-right" aria-hidden="true"></i></h4>
+            </div>
+            <div class="about">
+                <h1>About</h1>
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quo labore repudiandae id placeat maxime neque consequuntur! Aliquam eius nisi rem saepe dolores expedita laudantium quas voluptatum doloremque, beatae nulla sit quod velit ad optio laborum tempore assumenda magni voluptate? Natus dolores itaque repellat harum omnis in ullam, labore fugit tempora ducimus reiciendis quo excepturi, recusandae voluptates cumque autem unde beatae pariatur libero repudiandae! Esse nihil quia expedita nisi iure quibusdam, inventore minus totam ducimus iste! Vitae quos aliquid pariatur. Libero excepturi, illum at nihil atque, dolores blanditiis laborum, eum ut ipsum adipisci quasi et ratione consectetur. Porro, tempora error.</p>
+            </div>
+            <div class="activity">
+                <div class="activity-top">
+                    <h1>Activity</h1>
+                    <div>
+                        <button class="floating-right">Create a post</button>
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="green-button">Posts</button>
+                    <button class="normal">Comments</button>
+                    <button class="normal">Videos</button>
+                    <button class="normal">Images</button>
+                    <button class="normal2">Documents</button>
+                </div>
+                <p>Ronaldo <i class="fa fa-bolt" aria-hidden="true"> </i></p>
+                <small>posted this &#8226; 7h</small>
+                <div class="image-post">
+                    <img src="li_images/post-activity.jpg">
+                    <div class="image-right">
+                        <p>Single Event Trigger Using Pure JavaScript <br> Hope this helps......</p>
+                    </div>
+                </div>
+                <hr color="#eee">
+                <h4>Show All Posts <i class="fa fa-arrow-right" aria-hidden="true"></i> </h4>
+            </div>
+            
+
+            <div class="education">
+                <h1>Education</h1>
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                <div class="institution-details">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    <div>
+                        <h3>University of California</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, at corporis quaerat alias libero iure.</p>
+                        <small>Apr 2015 - May 2021</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h1>Skills</h1>
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                <button>Take skill quiz</button>
+                <hr color="#fff">
+                <h3>JavaScript</h3>
+                <hr color="#eee">
+                <h3>MongoDB</h3>
+                <hr color="#eee">
+                <h3>Python Programming</h3>
+                <hr color="#eee">
+                <div class="other-skills">Show all other skills <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+            </div>
+
+            <div class="languages">
+                <h1>Languages</h1>
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                <hr color="#fff">
+                <h3>English</h3>
+                <p>Full professional proficiency</p>
+                <hr color="#eee">
+                <h3>Spanish</h3>
+                <p>Native or bilingual proficiency</p>
+                <hr color="#eee">
+                <h3>French</h3>
+                <p>Native or bilingual proficiency</p>
+                <hr color="#eee">
+                <div class="show-langs">Show all 4 Languages <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+            </div>
+
+            <div class="intrests">
+                <h1>Interests</h1>
+                <h3 class="active-intrest">Companies</h3>
+                <h3>Groups</h3>
+                <h3>Schools</h3>
+                <hr color="#eee">
+                <div class="intrests-main">
+                    <div class="hacker-earth">
+                        <img src="li_images/hacker.png">
+                        <div>
+                            <h4>HackerEarth</h4>
+                            <p>42,970 followers</p>
+                            <button><i class="fa fa-check" aria-hidden="true"></i> Following </button>
+                        </div>
+                    </div>
+                    <div class="ted">
+                        <img src="li_images/ted.png">
+                        <div>
+                            <h4>TED Talks</h4>
+                            <p>92,460 followers</p>
+                            <button><i class="fa fa-check" aria-hidden="true"></i> Following </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="show-all-companies">Show all 68 companies <i class="fa fa-arrow-right" aria-hidden="true"></i> </div>
+            </div>
+
+            <div class="footers">
+                <div class="cols">
+                    <ul>
+                        <li>About</li>
+                        <li>Community Guidelines</li>
+                        <li>Privacy & Terms</li>
+                        <li>Sales Solutions</li>
+                        <li>Safety Center</li>
+                    </ul>
+                </div>
+                <div class="cols">
+                    <ul>
+                        <li>Accessibility</li>
+                        <li>Careers</li>
+                        <li>Ad Choices</li>
+                        <li>Mobile</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Talent Solutions</li>
+                        <li>Marketing Solutions</li>
+                        <li>Advertising</li>
+                        <li>Small Business</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <div class="last-col">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                <div>
+                                    <h5>Questions?</h5>
+                                    <p>Visit our Help Center</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="last-col">
+                                <i class="fa fa-cog" aria-hidden="true"></i>
+                                <div>
+                                    <h5>Manage your account and privacy</h5>
+                                    <p>Go to your Settings</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="last-col">
+                                <i class="fa fa-tag" aria-hidden="true"></i>
+                                <div>
+                                    <h5>Recommendation transparency</h5>
+                                    <p>Learn more about Recommended Content</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="profile-copyrights">
+                LinkedIn Corporation © 2023
+            </div>
+        </div>
+
+
+
+        <div class="right-Profile">
+            <div class="edit">
+                <div class="row">
+                    <p>Edit public profile & URL</p>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                </div>
+                <hr color="#eee">
+                <div class="row">
+                    <p>Add profile in another Language</p>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="profile-ad">
+                <small>Ad &#8226;&#8226;&#8226; </small>
+                <p>Find how Uneecops L.I.V.E. Enterprises philosophy is building future.</p>
+                <div class="ad-imgs">
+                    <img src="li_images/user-1.png">
+                    <img src="li_images/mi-logo.png">
+                </div>
+                <h5>With tech changes, CIOs are bustling with activity.</h5>
+                <button>Follow</button>
+            </div>
+            <div class="people-also-viewed">
+                <h2>People also viewed</h2>
+                <div class="people-viewed">
+                    <img src="li_images/user-2.png">
+                    <div>
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button><i class="fa fa-lock" aria-hidden="true"></i> Message </button>
+                    </div>
+                </div>
+                <hr color="#eee">
+                <div class="people-viewed">
+                    <img src="li_images/user-3.png">
+                    <div>
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button><i class="fa fa-user" aria-hidden="true"></i> Connect </button>
+                    </div>
+                </div>
+                <div class="show-more-people">Show More <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+            </div>
+            <div class="people-u-may-know">
+                <h2>People you may know</h2>
+                <div class="people-known">
+                    <img src="li_images/user-4.png">
+                    <div>
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button><i class="fa fa-lock" aria-hidden="true"></i> Message </button>
+                    </div>
+                </div>
+                <hr color="#eee">
+                <div class="people-known">
+                    <img src="li_images/user-5.png">
+                    <div>
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button><i class="fa fa-plus" aria-hidden="true"></i> Follow </button>
+                    </div>
+                </div>
+                <div class="show-more-people">Show More <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+            </div>
+            <div class="learning">
+                <img src="li_images/logo.png">
+                <h6>LEARNING</h6>
+                <P>Add new skills with these courses, free for 24 hours</P>
+                <div class="learn-in">
+                    <img src="li_images/post-image-1.png">
+                    <bold>Learning JDBC</bold>
+                </div>
+                <hr color="#eee">
+                <div class="learn-in">
+                    <img src="li_images/post-image-2.png">
+                    <bold>Java Essential Training : Syntax and Structure</bold>
+                </div>
+                <hr color="#eee">
+                <div class="learn-in">
+                    <img src="li_images/post-image-3.png">
+                    <bold>Java Exception Handling</bold>
+                </div>
+                <div class="show-more-people">See my recommendations<i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+            </div>
+            
+            <div class="ad-img">
+                <img src="li_images/ad-img.png">
+            </div>
+            <div class="language-drop-down">
+                <p>Select Language</p>
+                <select>
+                    <option>English (US)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>

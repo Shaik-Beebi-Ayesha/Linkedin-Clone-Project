@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="linkedin.html" class="logo"><img src="li_images/logo.png"></a>
+            <div class="search">
+                <img src="li_images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="li_images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="li_images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="li_images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="li_images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="li_images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="usertoggle">
+            <img class="nav-profile-img" src="li_images/user-1.png" onclick="toggleMenu()">
+            <div class="me & dropdown">
+                <span>Me</span>
+                <img src="li_images/down-arrow.png">
+            </div>
+        </div>
+        <div class="apps-icon">
+            <img class="icons-img" src="li_images/appsicon.png">
+            <div>
+                <span>For Business</span>
+                <img class="dropdownarrow" src="li_images/down-arrow.png">
+            </div>
+        </div>
+        <div class="gethired">
+            <a href="#">Get Hired Faster<br>Try Premium Free</a>
+        </div>
+        <!-- <div class="usertoggle">
+            <div class="online">
+                <img class="nav-profile-img" src="li_images/user-1.png" onclick="toggleMenu()">
+            </div>
+            <div class="me & dropdown">
+                <span>Me</span>
+                <img src="li_images/down-arrow.png">
+            </div>
+        </div> -->
+        <!-- <div class="nav-right">
+            <div class="online">
+                <img class="nav-profile-img" src="li_images/user-1.png" onclick="toggleMenu()">
+            </div>
+        </div> -->
+
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="li_images/user-1.png">
+                    <div>
+                        <h3>Rayon Walton</h3>
+                        <p>Aspiring Java Software Developer | Seeking Entry-Level Programming Position | Familiar with DSA , Python , SQL</p>
+                    </div>
+                </div>
+                <div class="veiw-profile"><a href="">View Profile</a></div>
+                <hr>
+                <div class="below">
+                    <h3>Account</h3>
+                    <p>Settings & Privacy</p>
+                    <p>Help</p>
+                    <p>Language</p>
+                </div>
+                <div class="below">
+                    <h3>Manage</h3>
+                    <p>Post & Activity</p>
+                    <p>Job Posting Account</p>
+                </div>
+                <hr>
+                <div class="signout"><a>Sign Out</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- /* navbar-close */ -->
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="li_images/cover-pic.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="li_images/user-1.png">
+                    <h1>Rayan Walton</h1>
+                    <h3>Aspiring Java Software Developer | Seeking Entry-Level Programming Position | Familiar with DSA , Python , SQL</h3>
+                    <hr class="ruler1">
+                    <div class="connections">
+                        <p>Connections<span>47</span></p>
+                        <h5>Grow your network</h5>
+                    </div>
+                    <div class="profileviwes">
+                        <p>Who's viewed your profile<span>41</span></p>
+                    </div>
+                    <div class="access-tools">
+                        <p>Access exclusive tools & insights</p>
+                        <div class="premium">
+                            <img src="li_images/premium.png">
+                            <h6>Get Hired Faster,Try Premium Free</h6>
+                        </div>
+                    </div>
+                    <div class="myitems">
+                        <div><img src="li_images/items.png"></div>
+                        <div><h2>My Items</h2></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-activity">
+                <h3>RECENT</h3>
+                <a href=""><img src="li_images/recent.png">Web Development</a>
+                <a href=""><img src="li_images/recent.png">User Interface</a>
+                <a href=""><img src="li_images/recent.png">Online Learning</a>
+                <a href=""><img src="li_images/recent.png">Learn Online</a>
+                <a href=""><img src="li_images/recent.png">Code Better</a>
+                <a href=""><img src="li_images/recent.png">Group Learning</a>
+                <h3>GROUPS</h3>
+                <a href=""><img src="li_images/group.png">Web Developers</a>
+                <a href=""><img src="li_images/group.png">HTML & CSS Learners</a>
+                <a href=""><img src="li_images/group.png">Python & Java Script Group</a>
+                <a href=""><img src="li_images/group.png">Learn Coding Online</a>
+                <h3>HASHTAG</h3>
+                <a href=""><img src="li_images/hashtag.png">webdevelopment</a>
+                <a href=""><img src="li_images/hashtag.png">userinterface</a>
+                <a href=""><img src="li_images/hashtag.png">onlinelearning</a>
+                <div class="discover-more-link">
+                    <a href="">Discover More</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="li_images/user-1.png">
+                    <textarea rows="1" placeholder="Write a Post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="li_images/photo.png">Photo</li>
+                    <li><img src="li_images/video.png">Video</li>
+                    <li><img src="li_images/event.png">Events</li>
+                    <li><img src="li_images/artitle.png">Write Article</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span>Top<img src="li_images/down-arrow.png"></span></p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="li_images/user-3.png">
+                    <div>
+                        <h1>Benjamen Leo</h1>
+                        <small>Founder and CEO at UFLUFA Group</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit magnam totam inventore. Dolorem odit exercitationem saepe quis officia nesciunt qui non incidunt, facilis aperiam tempore quisquam beatae hic mollitia iusto, sapiente asperiores. Omnis quam cumque amet accusantium autem. Vitae possimus repudiandae quasi, doloribus dolorum sequi nostrum accusamus non perferendis laborum.</p>
+                <img src="li_images/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="li_images/thumbsup.png">
+                        <img src="li_images/love.png">
+                        <img src="li_images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &#8226; 40 share</span>
+                    </div>
+                </div>
+                
+                <div class="post-activity">
+                    <div>
+                        <img src="li_images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="li_images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="li_images/search.png">
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <img src="li_images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="li_images/user-2.png">
+                    <div>
+                        <h1>Benjamen Leo</h1>
+                        <small>Founder and CEO at UFLUFA Group</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit magnam totam inventore. Dolorem odit exercitationem saepe quis officia nesciunt qui non incidunt, facilis aperiam tempore quisquam beatae hic mollitia iusto, sapiente asperiores. Omnis quam cumque amet accusantium autem. Vitae possimus repudiandae quasi, doloribus dolorum sequi nostrum accusamus non perferendis laborum.</p>
+                <img src="li_images/post-image-2.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="li_images/thumbsup.png">
+                        <img src="li_images/love.png">
+                        <img src="li_images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &#8226; 40 share</span>
+                    </div>
+                </div>
+                
+                <div class="post-activity">
+                    <div>
+                        <img src="li_images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="li_images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="li_images/search.png">
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <img src="li_images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="li_images/user-4.png">
+                    <div>
+                        <h1>Benjamen Leo</h1>
+                        <small>Founder and CEO at UFLUFA Group</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit magnam totam inventore. Dolorem odit exercitationem saepe quis officia nesciunt qui non incidunt, facilis aperiam tempore quisquam beatae hic mollitia iusto, sapiente asperiores. Omnis quam cumque amet accusantium autem. Vitae possimus repudiandae quasi, doloribus dolorum sequi nostrum accusamus non perferendis laborum.</p>
+                <img src="li_images/post-image-3.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="li_images/thumbsup.png">
+                        <img src="li_images/love.png">
+                        <img src="li_images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &#8226; 40 share</span>
+                    </div>
+                </div>
+                
+                <div class="post-activity">
+                    <div>
+                        <img src="li_images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="li_images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="li_images/search.png">
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <img src="li_images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="li_images/user-5.png">
+                    <div>
+                        <h1>Benjamen Leo</h1>
+                        <small>Founder and CEO at UFLUFA Group</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit magnam totam inventore. Dolorem odit exercitationem saepe quis officia nesciunt qui non incidunt, facilis aperiam tempore quisquam beatae hic mollitia iusto, sapiente asperiores. Omnis quam cumque amet accusantium autem. Vitae possimus repudiandae quasi, doloribus dolorum sequi nostrum accusamus non perferendis laborum.</p>
+                <img src="li_images/post-image-4.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="li_images/thumbsup.png">
+                        <img src="li_images/love.png">
+                        <img src="li_images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &#8226; 40 share</span>
+                    </div>
+                </div>
+                
+                <div class="post-activity">
+                    <div>
+                        <img src="li_images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="li_images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="li_images/search.png">
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <img src="li_images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="li_images/user-1.png">
+                    <div>
+                        <h1>Benjamen Leo</h1>
+                        <small>Founder and CEO at UFLUFA Group</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit magnam totam inventore. Dolorem odit exercitationem saepe quis officia nesciunt qui non incidunt, facilis aperiam tempore quisquam beatae hic mollitia iusto, sapiente asperiores. Omnis quam cumque amet accusantium autem. Vitae possimus repudiandae quasi, doloribus dolorum sequi nostrum accusamus non perferendis laborum.</p>
+                <img src="li_images/post-image-2.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="li_images/thumbsup.png">
+                        <img src="li_images/love.png">
+                        <img src="li_images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &#8226; 40 share</span>
+                    </div>
+                </div>
+                
+                <div class="post-activity">
+                    <div>
+                        <img src="li_images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="li_images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="li_images/search.png">
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <img src="li_images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="li_images/user-3.png">
+                    <div>
+                        <h1>Benjamen Leo</h1>
+                        <small>Founder and CEO at UFLUFA Group</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit magnam totam inventore. Dolorem odit exercitationem saepe quis officia nesciunt qui non incidunt, facilis aperiam tempore quisquam beatae hic mollitia iusto, sapiente asperiores. Omnis quam cumque amet accusantium autem. Vitae possimus repudiandae quasi, doloribus dolorum sequi nostrum accusamus non perferendis laborum.</p>
+                <img src="li_images/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="li_images/thumbsup.png">
+                        <img src="li_images/love.png">
+                        <img src="li_images/clap.png">
+                        <span class="liked-users">Abhinav Mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &#8226; 40 share</span>
+                    </div>
+                </div>
+                
+                <div class="post-activity">
+                    <div>
+                        <img src="li_images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div>
+                        <img src="li_images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div>
+                        <img src="li_images/search.png">
+                        <span>Share</span>
+                    </div>
+                    <div>
+                        <img src="li_images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="li_images/more.png" class="info-icon">
+                <h3>Trending News</h3>
+                <ul>
+                    <li>
+                        <a href="">High Demand for skilled manpower</a>
+                        <span>1d ago &#8226; 10,956 readers</span>
+                    </li>
+                    <li>
+                        <a href="">More NRIs eye Indian real estate</a>
+                        <span>3d ago &#8226; 10,956 readers</span>
+                    </li>
+                    <li>
+                        <a href="">RBI pauses rate hikes again</a>
+                        <span>1d ago &#8226; 10,956 readers</span>
+                    </li>
+                    <li>
+                        <a href="">Marketing’s AI revolution</a>
+                        <span>3d ago &#8226; 10,956 readers</span>
+                    </li>
+                    <li>
+                        <a href="">India's internet economy set to boom</a>
+                        <span>1d ago &#8226; 10,956 readers</span>
+                    </li>
+                </ul>
+                <a href="" class="read-more-link">Show More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad  &#8226;&#8226;&#8226;</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img class="img1" src="li_images/user-1.png">
+                    <img class="img2"src="li_images/logo2.jpg">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="" class="ad-link">Learn More</a>
+                </b>
+            </div>
+            <div class="sidebar-useful-links">
+                <a href="">About</a>
+                <a href="">Accessibility</a>
+                <a href="">Help Center</a>
+                <a href="">Privacy & Terms</a>
+                <a href="">Ad Choices</a>
+                <a href="">Advertising</a>
+                <a href="">Business Services</a>
+                <a href="">Get the Linkedin app</a>
+                <a href="">More</a>
+
+                <div class="copyright-msg">
+                    <h2>Linked</h2>
+                    <img src="li_images/logo.png">
+                    <p>Linkedin Corporation &#169 2023</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+         let profileMenu =document.getElementById("profileMenu");
+         function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+         }
+    </script>
+</body>
+</html>
